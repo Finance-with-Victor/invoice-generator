@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { InvoiceData } from "@types";
+import { InvoiceData, InvoiceItem } from "@types";
 import React from "react";
 import { ScrollArea } from "./ui/scroll-area";
 import { Button } from "./ui/button";
@@ -65,8 +65,8 @@ const InvoicePreview: React.FC<InvoicePreviewProps> = ({
               </tr>
             </thead>
             <tbody>
-              {invoice?.items.map((item, index) => (
-                <tr key="{index}" className="border-b border-gray-200">
+              {invoice?.items.map((item: InvoiceItem, index: number) => (
+                <tr key={index} className="border-b border-gray-200">
                   <td className="py-2">{index + 1}</td>
                   <td className="py-2 whitespace-pre-line">
                     {item.description}
@@ -106,9 +106,9 @@ const InvoicePreview: React.FC<InvoicePreviewProps> = ({
               </div>
             </div>
           ) : null}
-      <div className="mb-4">
-        <Button onClick={generatePDF}>Generate PDF</Button>
-      </div>
+          <div className="mb-4">
+            <Button onClick={generatePDF}>Generate PDF</Button>
+          </div>
         </CardContent>
       </Card>
     </ScrollArea>

@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Dispatch, SetStateAction } from "react";
-import { InvoiceData } from "@types";
+import { InvoiceData, InvoiceItem } from "@types";
 import { Textarea } from "./ui/textarea";
 
 interface Props {
@@ -22,9 +22,17 @@ const Generator = ({ invoice, setInvoice }: Props) => {
     setInvoice((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleItemChange = (index: number, field: string, value: string) => {
+  const handleItemChange = (
+    index: number,
+    field: keyof InvoiceItem,
+    value: string | number
+  ) => {
     const updatedItems = [...invoice.items];
-    updatedItems[index] = { ...updatedItems[index], [field]: value };
+    if (field === "quantity" || field === "unitPrice") {
+      updatedItems[index][field] = Number(value);
+    } else {
+      updatedItems[index][field] = String(value);
+    }
     setInvoice((prev) => ({ ...prev, items: updatedItems }));
   };
 
