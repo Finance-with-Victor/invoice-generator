@@ -27,6 +27,6 @@
       "@types": ["./index.d.ts"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next.config.tjs"],
   "exclude": ["node_modules"]
 }

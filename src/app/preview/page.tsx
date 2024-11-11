@@ -1,3 +1,4 @@
+'use client'
 import InvoicePreview from "@/components/InvoicePreview";
 import { invoices } from "@/lib/data";
 import React from "react";
