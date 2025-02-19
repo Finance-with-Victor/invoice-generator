@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-   // @ts-ignore
+// @ts-ignore
 import { useReactToPrint } from "react-to-print";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -20,21 +20,27 @@ const InvoicePreview: React.FC<InvoicePreviewProps> = ({
   });
 
   return (
-    <ScrollArea className="h-[600px]">
+    <ScrollArea className="h-[650px]">
       <Card className="w-full bg-white text-black">
-        <CardContent className="space-y-6">
-          <div ref={contentRef} className="p-8">
+        <CardContent className="px-4 space-y-6">
+          <div ref={contentRef} className="px-8 py-6">
             <div className="flex justify-between items-start">
-              <div>
-                <h1 className="text-4xl font-bold text-primary">RECEIPT</h1>
+              <div className="text-left">
+                <h2 className="text-xl font-bold">{invoice.companyName}</h2>
+                <p>{invoice.companyAddress}</p>
+                <p>TEL: {invoice.companyPhone}</p>
                 <p className="text-sm text-gray-500">
                   Receipt Date: {invoice.date}
                 </p>
               </div>
-              <div className="text-right">
-                <h2 className="text-xl font-bold">{invoice.companyName}</h2>
-                <p>{invoice.companyAddress}</p>
-                <p>TEL: {invoice.companyPhone}</p>
+              <div>
+                <img
+                  src="/logo.png"
+                  alt="Receipt illustration"
+                  className="h-auto rounded-lg shadow-lg"
+                  width={110}
+                  height={110}
+                />
               </div>
             </div>
 

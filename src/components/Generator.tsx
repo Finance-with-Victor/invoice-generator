@@ -57,7 +57,7 @@ const Generator = ({ invoice, setInvoice }: Props) => {
         <CardTitle className="text-lg">Edit Receipt</CardTitle>
       </CardHeader>
       <CardContent>
-        <ScrollArea className="h-[600px] pr-4">
+        <ScrollArea className="h-[900px] pr-4">
           <div className="space-y-4">
             <div>
               <Label htmlFor="companyName">Company Name</Label>
