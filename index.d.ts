@@ -31,3 +31,20 @@ export interface InvoiceData {
   amountInWords: string;
   notes?: string;
 }
+
+export interface UserProfile {
+  uid: string;
+  email: string | null;
+  companyName?: string;
+  address?: string;
+  logoUrl?: string;
+}
+
+export interface Invoice {
+  id?: string; // Firestore ID
+  userId: string;
+  clientName: string;
+  amount: number;
+  status: 'paid' | 'pending' | 'overdue';
+  createdAt: any; // Use Firestore Timestamp for queries
+}
