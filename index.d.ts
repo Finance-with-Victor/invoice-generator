@@ -48,3 +48,9 @@ export interface Invoice {
   status: 'paid' | 'pending' | 'overdue';
   createdAt: any; // Use Firestore Timestamp for queries
 }
+
+
+interface AuthType {
+  email: string;
+  password: string;
+}
