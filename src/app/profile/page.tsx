@@ -69,7 +69,7 @@ export default function ProfilePage() {
     <DashboardWrapper>
       <div className="container mx-auto p-8 bg-gradient-to-br from-purple-50 to-blue-100 min-h-screen">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-3xl font-bold text-blue-900">Welcome, {user.displayName || 'User'}!</h1>
+          <h1 className="text-2xl font-bold text-blue-900">Welcome, {user.displayName || 'User'}!</h1>
           <Button onClick={logout} variant="destructive">Logout</Button>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

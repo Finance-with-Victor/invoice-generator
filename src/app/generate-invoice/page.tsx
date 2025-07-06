@@ -30,7 +30,7 @@ export default function GenerateInvoicePage() {
       <main className="min-h-screen bg-gradient-to-br from-green-50 to-blue-100 py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-extrabold text-blue-900 sm:text-4xl">
+            <h1 className="text-2xl font-extrabold text-blue-900 sm:text-4xl">
               Invoice Generator
             </h1>
             <p className="mt-3 max-w-2xl mx-auto text-xl text-blue-700 sm:mt-4">

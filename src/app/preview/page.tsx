@@ -28,7 +28,7 @@ export default function Invoice() {
   return (
     <DashboardWrapper>
       <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-green-100 p-8">
-        <h1 className="text-3xl font-bold text-green-900 mb-6">Invoice Preview</h1>
+        <h1 className="text-2xl font-bold text-green-900 mb-6">Invoice Preview</h1>
         <div className="bg-white rounded-lg shadow-lg p-6">
           <InvoicePreview invoice={invoices[0]} />
         </div>
