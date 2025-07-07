@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import InvoicePreview from "@/components/InvoicePreview";
 import { invoices } from "@/lib/data";
 import DashboardWrapper from "@/components/dashboard-wrapper";
@@ -28,9 +28,17 @@ export default function Invoice() {
   return (
     <DashboardWrapper>
       <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-green-100 p-8">
-        <h1 className="text-2xl font-bold text-green-900 mb-6">Invoice Preview</h1>
-        <div className="bg-white rounded-lg shadow-lg p-6">
-          <InvoicePreview invoice={invoices[0]} />
+        <h1 className="text-2xl font-bold text-green-900 mb-6">
+          Invoice Preview
+        </h1>
+        <div>
+          <InvoicePreview
+            invoice={
+              user.email === "gichuivictor@gmail.com"
+                ? invoices[0]
+                : invoices[3]
+            }
+          />
         </div>
       </div>
     </DashboardWrapper>

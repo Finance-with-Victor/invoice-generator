@@ -28,7 +28,7 @@ export default function GenerateInvoicePage() {
   return (
     <DashboardWrapper>
       <main className="min-h-screen bg-gradient-to-br from-green-50 to-blue-100 py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[90rem] mx-auto">
           <div className="text-center mb-8">
             <h1 className="text-2xl font-extrabold text-blue-900 sm:text-4xl">
               Invoice Generator
@@ -39,7 +39,7 @@ export default function GenerateInvoicePage() {
           </div>
           <div className="flex flex-col lg:flex-row gap-8">
             <div className="lg:w-1/3">
-              <Card className="mb-8 bg-gradient-to-tr from-blue-200 to-blue-400 text-blue-900 shadow-lg">
+              <Card className="mb-8 bg-gradient-to-tr from-blue-100 to-blue-200 text-blue-900 shadow-lg">
                 <CardContent className="p-6">
                   <img
                     src="/logo.png"
@@ -50,7 +50,7 @@ export default function GenerateInvoicePage() {
                   />
                 </CardContent>
               </Card>
-              <Card className="bg-gradient-to-tr from-green-200 to-green-400 text-green-900 shadow-lg">
+              <Card className="bg-gradient-to-tr from-green-100 to-green-200 text-green-900 shadow-lg">
                 <CardHeader>
                   <CardTitle>Tips for Creating Invoices</CardTitle>
                 </CardHeader>
@@ -66,7 +66,7 @@ export default function GenerateInvoicePage() {
               </Card>
             </div>
             <div className="flex-1">
-              <Wrapper />
+              <Wrapper user={user}/>
             </div>
           </div>
         </div>

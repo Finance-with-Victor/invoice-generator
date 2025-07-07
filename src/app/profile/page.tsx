@@ -100,7 +100,7 @@ export default function ProfilePage() {
           </Card>
 
           {/* Invoices Section */}
-          <Card className="col-span-2 bg-gradient-to-tr from-green-200 to-green-400 text-green-900 shadow-lg">
+          <Card className="col-span-2 bg-gradient-to-tr from-gray-100 to-gray-200 text-black shadow-lg">
             <CardHeader>
               <CardTitle>Your Invoices</CardTitle>
             </CardHeader>
@@ -116,7 +116,7 @@ export default function ProfilePage() {
                   ))}
                 </ul>
               ) : (
-                <p className="text-green-800">You have no invoices yet.</p>
+                <p className="text-gray-800">You have no invoices yet.</p>
               )}
             </CardContent>
           </Card>

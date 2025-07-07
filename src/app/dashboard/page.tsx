@@ -38,7 +38,7 @@ export default function Page() {
           Welcome to your Dashboard, {user.displayName || "User"}!
         </h1>
         <div className="grid gap-6 md:grid-cols-3">
-          <Card className="bg-gradient-to-tr from-blue-200 to-blue-400 text-blue-900 shadow-lg">
+          <Card className="bg-gradient-to-tr from-blue-100 to-blue-200 text-blue-900 shadow-lg">
             <CardHeader>
               <CardTitle>Total Invoices</CardTitle>
             </CardHeader>
@@ -46,7 +46,7 @@ export default function Page() {
               <span className="text-4xl font-bold">--</span>
             </CardContent>
           </Card>
-          <Card className="bg-gradient-to-tr from-green-200 to-green-400 text-green-900 shadow-lg">
+          <Card className="bg-gradient-to-tr from-green-100 to-green-200 text-green-900 shadow-lg">
             <CardHeader>
               <CardTitle>Paid Invoices</CardTitle>
             </CardHeader>
@@ -54,7 +54,7 @@ export default function Page() {
               <span className="text-4xl font-bold">--</span>
             </CardContent>
           </Card>
-          <Card className="bg-gradient-to-tr from-red-200 to-red-400 text-red-900 shadow-lg">
+          <Card className="bg-gradient-to-tr from-red-100 to-red-200 text-red-900 shadow-lg">
             <CardHeader>
               <CardTitle>Outstanding</CardTitle>
             </CardHeader>
@@ -72,7 +72,7 @@ export default function Page() {
               <Button
                 asChild
                 size="sm"
-                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+                className="px-4 py-2 text-white rounded hover:bg-gray-700 transition"
               >
                 <Link href="/generate-invoice">Generate Invoice</Link>
               </Button>
@@ -85,15 +85,6 @@ export default function Page() {
                 className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
               >
                 <Link href="/preview">View Invoices</Link>
-              </Button>
-            </li>
-            <li>
-              <Button
-                asChild
-                size="sm"
-                className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition"
-              >
-                <Link href="/profile">Profile</Link>
               </Button>
             </li>
           </ul>

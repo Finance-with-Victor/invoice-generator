@@ -23,6 +23,7 @@ export interface InvoiceData {
   companyName: string
   companyAddress: string
   companyPhone: string
+  user?: string;
   tillNo: string
   date: string
   customerName: string
