@@ -11,7 +11,8 @@ export default function Home() {
             Receipt Generator
           </h1>
           <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-            Create and preview professional receipts in minutes
+            Fill in the details, preview the receipt, then print it or save it
+            as a PDF.
           </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-8">
@@ -20,7 +21,7 @@ export default function Home() {
               <CardContent className="p-6">
                 <img
                   src="/logo.png"
-                  alt="Receipt illustration"
+                  alt="The Rocky Forest Royal Resort logo"
                   className="w-full h-auto rounded-lg shadow-lg"
                   width={400}
                   height={300}
@@ -29,16 +30,26 @@ export default function Home() {
             </Card>
             <Card>
               <CardHeader>
-                <CardTitle>Tips for Creating Receipts</CardTitle>
+                <CardTitle>How it works</CardTitle>
               </CardHeader>
               <CardContent>
-                <ul className="list-disc pl-5 space-y-2">
-                  <li>Include all necessary business information</li>
-                  <li>Clearly itemize all products or services</li>
-                  <li>Double-check all calculations</li>
-                  <li>Include payment terms and methods</li>
-                  <li>Keep a copy for your records</li>
-                </ul>
+                <ol className="list-decimal pl-5 space-y-2">
+                  <li>
+                    Edit the business details, till number, date and customer.
+                  </li>
+                  <li>
+                    Add line items with a quantity and a unit price in Ksh.
+                  </li>
+                  <li>
+                    Press Calculate Total, then type the amount in words.
+                  </li>
+                  <li>
+                    Open Preview Receipt and press Print or save as PDF.
+                  </li>
+                  <li>
+                    Nothing is saved. Reloading the page resets the form.
+                  </li>
+                </ol>
               </CardContent>
             </Card>
           </div>

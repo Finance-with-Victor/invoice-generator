@@ -36,7 +36,7 @@ const InvoicePreview: React.FC<InvoicePreviewProps> = ({
               <div>
                 <img
                   src="/logo.png"
-                  alt="Receipt illustration"
+                  alt="The Rocky Forest Royal Resort logo"
                   className="h-auto rounded-lg shadow-lg"
                   width={110}
                   height={110}
@@ -112,7 +112,7 @@ const InvoicePreview: React.FC<InvoicePreviewProps> = ({
           </div>
 
           <div className="mb-4">
-            <Button onClick={() => reactToPrintFn()}>Generate PDF</Button>
+            <Button onClick={() => reactToPrintFn()}>Print or save as PDF</Button>
           </div>
         </CardContent>
       </Card>
